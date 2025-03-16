@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#40153D;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Pesos mais fortes para títulos */
+  }
+  
+  p, li, button {
+    font-weight: 400; /* Peso padrão para parágrafos e outros textos */
+  }
+.App {
+    background-color:#40153D;
+    min-height: 100vh;
+
+}
