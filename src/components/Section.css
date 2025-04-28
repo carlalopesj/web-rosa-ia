@@ -145,3 +145,50 @@ section img {
     position: absolute;
     right: -15px;
 }
+
+@media (max-width: 768px) {
+    section {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    section > div:first-child h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    section > div:first-child h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    section > div:first-child p {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  
+    section img {
+      width: 300px;
+      margin: 20px 0 0 0;
+    }
+  
+    .info-box {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .info-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .linha {
+      display: none;
+    }
+  }
+  

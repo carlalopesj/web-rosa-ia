@@ -29,7 +29,7 @@ export function Section() {
             <section className="section2">
     <div className="info-box">
         <div className="info-item">
-            <img src="/img/loc.png" alt="Localização" className="info-icon" />
+            <img src="/img/ferramentas.png" alt="ferramentas" className="info-icon" />
             <div className="text-container">
                 <h3>Venham nos conhecer</h3>
                 <p>(-------------)</p>
@@ -38,7 +38,7 @@ export function Section() {
         </div>
 
         <div className="info-item">
-            <img src="/img/shape.png" alt="Telefone" className="info-icon" />
+            <img src="/img/artigo.png" alt="Telefone" className="info-icon" />
             <div className="text-container">
                 <h3>Ligue para nós</h3>
                 <p>(61) 0000-0000</p>

@@ -1,10 +1,23 @@
 nav {
-    background-color: #40153D;
-    color: #FFFFFF;
-    padding: 40px 94px 40px 40px;
+    color:#40153D;
+    background-color: #FFFFFF;
+    padding: 0px 95px 0px 40px;
     display: flex;
     justify-content: right; 
 
+}
+
+/*logo*/
+.logo {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    height: auto;
+
+}
+.logo img {
+    width: 150px; 
+    height: auto; 
 }
 
 /*botões*/
@@ -13,9 +26,9 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 17px 24px;
-    background-color: #40153D;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    color: #40153D;
+    background-color: #FFFFFF;
+    border: 3px solid #40153D;
     border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
@@ -42,11 +55,12 @@ nav ul{
     margin: 0;
     align-items: center;
     top: 94px;
+
 }
 
 nav ul li {
     margin: 15px;   
-    font-size: 12px; 
+    font-size: 15px; 
     line-height: 14.63px;
 }
 
@@ -56,8 +70,115 @@ nav ul li:last-of-type {
 
 nav ul button {
     margin-left: 25px;
-    height: 20px;
+    height: 15px;
     line-height: 19.5px;
     top: 92px;
 }
+
+/* Estilos do menu hambúrguer */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background-color: #40153D;
+    margin-right: 10px;
+  }
+  
+  .menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+  }
+  
+  /* Quando o menu está aberto, o ícone muda */
+  .menu-icon.open div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+  
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; 
+        align-items: center;
+        padding: 10px;
+    }
+  
+    nav ul {
+        flex-direction: row;
+        margin-top: 10px;
+
+    }
+  
+    nav ul li {
+        margin: 5px 0;
+    }
+  
+    nav ul button {
+        margin: 10px 0;
+        height: 15px;
+        width: 120px;
+    }
+
+    #btn-nav {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    #btn2-nav {
+        font-size: 14px;
+    }
+
+    .logo {
+        display: flex;
+        margin-right: auto;
+        align-items: center;
+        height: auto;
+    }
+    .logo img {
+        width: 80px; 
+        height: auto; 
+    }
+
+    @media (max-width: 768px) {
+        .menu {
+          display: none;
+          
+        }
+      
+        .menu-icon {
+          display: flex;
+        }
+      
+        /* Os botões vão aparecer tanto no celular quanto no desktop */
+        #btn-nav, #btn2-nav {
+          display: block;
+        }
+      }
+      
+      /* Quando a tela for maior que 768px, o menu hambúrguer não aparece e o menu fica visível */
+      @media (min-width: 769px) {
+        .menu {
+          display: flex;
+        }
+      
+        .menu-icon {
+          display: none;
+
+        }
+      }
+  }
+  
 
