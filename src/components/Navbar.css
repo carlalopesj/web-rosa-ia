@@ -4,7 +4,7 @@ nav {
     padding: 0px 95px 0px 40px;
     display: flex;
     justify-content: right; 
-
+ 
 }
 
 /*logo*/
@@ -82,7 +82,7 @@ nav ul button {
     gap: 5px;
     cursor: pointer;
     background-color: #40153D;
-    margin-right: 10px;
+    margin-right: 35px;
   }
   
   .menu-icon div {

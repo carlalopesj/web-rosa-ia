@@ -21,40 +21,38 @@ export function Section() {
                     </div>
                 </div>
 
-                <div id="img1">
+                <div className="img1">
                     <img src="./img/Dra-rosa.png" alt="imagem" />
                 </div>
             </section>
 
             <section className="section2">
-    <div className="info-box">
-        <div className="info-item">
-            <img src="/img/ferramentas.png" alt="ferramentas" className="info-icon" />
-            <div className="text-container">
-                <h3>Venham nos conhecer</h3>
-                <p>(-------------)</p>
-            </div>
-            <img src="/img/Vector5.png" alt="linha" className="linha"/>
-        </div>
+                <div className="info-box">
+                    <div className="info-item">
+                        <img src="/img/ferramentas.png" alt="ferramentas" className="info-icon" />
+                        <div className="text-container">
+                            <h3>Sobre a ferramenta</h3>
+                        </div>
+                        <img src="/img/Vector5.png" alt="linha" className="linha"/>
+                    </div>
 
-        <div className="info-item">
-            <img src="/img/artigo.png" alt="Telefone" className="info-icon" />
-            <div className="text-container">
-                <h3>Ligue para nós</h3>
-                <p>(61) 0000-0000</p>
-            </div>
-            <img src="/img/Vector5.png" alt="linha" className="linha"/>
-        </div>
+                    <div className="info-item">
+                        <img src="/img/artigo.png" alt="Telefone" className="info-icon" />
+                        <div className="text-container">
+                            <h3>Sobre o nosso artigo</h3>
+                        </div>
+                        <img src="/img/Vector5.png" alt="linha" className="linha"/>
+                    </div>
 
-        <div className="info-item">
-            <img src="/img/mail.png" alt="Email" className="info-icon" />
-            <div className="text-container">
-                <h3>Envie-nos uma mensagem</h3>
-                <p>rosaia@gmail.com</p>
-            </div>
-        </div>
-    </div>
-</section>
+                    <div className="info-item">
+                        <img src="/img/mail.png" alt="Email" className="info-icon3" />
+                        <div className="text-container">
+                            <h3>Envie-nos uma mensagem</h3>
+                            <p>rosaia@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     ); 
 }

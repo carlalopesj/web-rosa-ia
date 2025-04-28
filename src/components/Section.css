@@ -54,12 +54,13 @@ section>div:first-child button {
 }
 
 /* imagem Dra.Rosa */
-section>div:last-child img {
+.img1 {
     margin: 0;
     padding: 0; 
     border: none;
     line-height: 0;
     margin-right: 55px; 
+    margin-top: 20px;
 }
 
 section img {
@@ -89,7 +90,7 @@ section img {
     background: rgb(102,15,88);
     background: radial-gradient(circle, rgba(102,15,88,1) 28%, rgba(33,30,46,1) 97%);
     color: white;
-    padding: 35px;
+    padding: 10px;
     margin: 5px 50px 30px 0px;
     border-radius: 90px;
     display: flex;
@@ -112,15 +113,21 @@ section img {
     gap: 0px; /* Espaço entre a imagem e o texto */
     flex: 1;
     min-width: 200px;
-    padding: 20px;
+    padding: 0px;
     position: relative;
-    padding: 0 20px;
+
 }
 
 /* Imagem (ícone) */
 .info-icon {
-    width: 40px; /* Ajuste o tamanho da imagem */
-    height: 40px; /* Ajuste o tamanho da imagem */
+    width: 150px; 
+    height: 150px; 
+}
+
+.info-icon3{
+    width: 50px; 
+    height: 50px;
+    margin-left: 25px;
 }
 
 .info-item h3 {
@@ -137,8 +144,9 @@ section img {
 .text-container {
     display: flex;
     flex-direction: column; /* Organiza o título e o parágrafo em coluna */
-    gap: 0px; /* Espaço entre o h3 e o p */
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: center; /* Alinha o texto à esquerda */
+    padding: 20px;
+
 }
 .linha {
     width: 1px;
@@ -153,7 +161,9 @@ section img {
       margin-left: 0;
       padding: 20px;
     }
-  
+    
+    
+
     section > div:first-child h1 {
       font-size: 2rem;
       text-align: center;
@@ -173,12 +183,33 @@ section img {
       width: 300px;
       margin: 20px 0 0 0;
     }
-  
+    
+    section img {
+        justify-content: center;
+
+    }
+
+    .img1 {
+        margin: 0;
+        padding: 0; 
+        border: none;
+        line-height: 0;
+
+    }
+
+    .container1{
+        margin-left: 50px;
+    }
+    
+    .container2{
+        margin-left: 50px;
+    }
+
     .info-box {
-      flex-direction: column;
-      height: auto;
+      flex-direction: row;
       padding: 20px;
       width: 90%;
+      margin-left: 50px;
     }
   
     .info-item {
