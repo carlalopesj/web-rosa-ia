@@ -1,6 +1,8 @@
 import React from 'react';
 import { MdArrowForward } from 'react-icons/md';
 
+const ola = ('../../../public/img/Ola.png');
+
 export function Section() {
     const styles = {
         sectionMain: {
@@ -117,7 +119,7 @@ export function Section() {
                 </div>
 
                 <div style={styles.imageWrapper}>
-                    <img src="public/img/Ola.png" alt="Dra. Rosa" style={styles.image} />
+                    <img src={ola} alt="Dra. Rosa" style={styles.image} />
                 </div>
             </section>
 

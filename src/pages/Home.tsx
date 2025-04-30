@@ -1,7 +1,7 @@
 // Home.tsx
 import React from 'react';
 import { Navbar } from '../components/Navbar';
-import { Section } from '../components/Section';
+import { Section } from '../components/Section/index';
 import { Footer } from '../components/Footer';
 
 export function Home() {
