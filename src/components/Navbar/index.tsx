@@ -69,7 +69,7 @@ export function Navbar() {
 
   return (
     <nav style={styles.nav}>
-      <img src="/img/logo.png" alt="Logo" style={styles.logo} />
+      <img src="../../../public/img/logo.png" alt="Logo" style={styles.logo} />
       <ul style={styles.ul}>
         <li onClick={aindaNão} id='#sobre' style={styles.li}><strong>SOBRE</strong></li>
         <li onClick={aindaNão} style={styles.li}><strong>SERVIÇOS</strong></li>
