@@ -1,12 +1,15 @@
-import React from "react"
-import { Navbar } from "../components/Navbar"
-import { Section } from "../components/section"
+// Home.tsx
+import React from 'react';
+import { Navbar } from '../components/Navbar';
+import { Section } from '../components/Section';
+import { Footer } from '../components/Footer';
 
-export function Home(){
-    return(
+export function Home() {
+    return (
         <>
             <Navbar />
             <Section />
+            {/* <Footer /> */}
         </>
-    )
+    );
 }
