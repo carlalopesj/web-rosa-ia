@@ -119,7 +119,7 @@ export function Section() {
                 </div>
 
                 <div style={styles.imageWrapper}>
-                    <img src={ola} alt="Dra. Rosa" style={styles.image} />
+                <img src="/img/Ola.png" alt="Dra. Rosa" style={styles.image} />
                 </div>
             </section>
 
