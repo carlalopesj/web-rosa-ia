@@ -34,8 +34,9 @@ export function Navbar() {
     },
     logo: {
       borderRadius: '50%',
-      width: isMobile ? '90px': '6%',
-      padding: '20px'
+      width: isMobile ? '100px': '6%',
+      padding: '20px',
+      marginTop: isMobile ? '15px' : '0',
     },
     ul: {
       display: 'flex',
@@ -46,7 +47,7 @@ export function Navbar() {
       gap: '100px',
     },
     li: {
-      fontSize: '15px',
+      fontSize: '14px',
       lineHeight: '14.63px',
       cursor: 'pointer',
       background: 'linear-gradient(to right,  #8b3a45, #d45e6e)',
@@ -54,7 +55,7 @@ export function Navbar() {
       WebkitBackgroundClip: 'text',
       backgroundClip: 'text' as any,
       textAlign: 'right' as 'right',
-      paddingRight: '10px',
+      paddingRight: '0',
     },
     btnNav: {
       justifyContent: 'center',
@@ -143,7 +144,7 @@ export function Navbar() {
               size={30}
               color="#8b3a45"
               onClick={() => setIsMenuOpen(true)}
-              style={{ cursor: 'pointer', padding: '40px 25px' }}
+              style={{ cursor: 'pointer', padding: '0 25px', marginBottom:'15px' }}
             />
           ) : (
             <>
