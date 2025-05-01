@@ -1,25 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MdArrowForward } from 'react-icons/md';
 
 const ola = ('../../../public/img/Ola.png');
 
 export function Section() {
-    const styles = {
+    
+    const [isMobile, setIsMobile] = useState(false);
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
+    console.log("é mobile?", isMobile);
+
+    const styles: { [key: string]: React.CSSProperties } = {
         sectionMain: {
             display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '50px',
+            padding: isMobile ? '20px' : '50px',
+            paddingTop: isMobile ? '40px' : '150px',
             gap: '10px',
-            marginLeft: '80px',
+            width: '100%',
+            marginLeft: isMobile ? '0' : '80px',
             flexWrap: "wrap" as const,
         },
         textContent: {
             flex: 1,
             color: 'white',
+            textAlign: isMobile ? 'center' : 'left',
         },
         h1: {
-            fontSize: '3rem',
+            fontSize: isMobile ? '2.5rem' : '3rem',
             marginBottom: '10px',
             background: 'linear-gradient(to top,#8b3a45, #d45e6e)',
             WebkitBackgroundClip: 'text',
@@ -27,7 +47,7 @@ export function Section() {
             color: 'transparent',
         },
         h3: {
-            fontSize: '1.5rem',
+            fontSize: isMobile ? '1.3rem' : '1.5rem',
             marginBottom: '15px',
             height: '56px',
             background: 'linear-gradient(to right, #8b3a45, #d45e6e)',
@@ -39,19 +59,19 @@ export function Section() {
             background: 'linear-gradient(to right, #8b3a45, #d45e6e)',
             color: 'transparent',
             WebkitBackgroundClip: 'text',
-            textAlign: 'justify' as React.CSSProperties['textAlign'],
+            textAlign: (isMobile ? 'center' : 'justify') as React.CSSProperties['textAlign'],
             backgroundClip: 'text',
-            fontSize: '1.2rem',
+            fontSize: isMobile ? '1rem' : '1.2rem',
             marginBottom: '20px',
             lineHeight: 1.5,
         },
         container1: {
-            maxWidth: '80%',
+            maxWidth: '85%',
         },
         container2: {
-            display: 'flex',
+            justifyContent: isMobile ? 'center' : 'flex-start',
             alignItems: 'center',
-            flexWrap: 'wrap' as React.CSSProperties['flexWrap'],
+            flexWrap: ('wrap' as React.CSSProperties['flexWrap']),
             gap: '10px',
         },
         button: {
@@ -68,12 +88,13 @@ export function Section() {
             cursor: 'pointer',
         },
         imageWrapper: {
-            marginRight: '55px',
+            marginTop: isMobile ? '30px' : '0',
+            marginRight: isMobile ? '0' : '200px',
 
         },
         image: {
-            width: '600px',
-            objectFit: 'cover' as React.CSSProperties['objectFit'],
+            width: isMobile ? '300px' : '600px',
+            objectFit: ('cover' as React.CSSProperties['objectFit']),
             maxWidth: '100%',
             borderRadius: '50%',
         },
@@ -98,7 +119,7 @@ export function Section() {
 
     return (
         <>
-            <section id='#sobre' style={styles.sectionMain}>
+            <section id='sobre' style={styles.sectionMain}>
                 <div style={styles.textContent}>
                     <div style={styles.container1}>
                         <h1 style={styles.h1}>ROSA IA:</h1>
