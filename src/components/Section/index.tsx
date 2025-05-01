@@ -27,7 +27,7 @@ export function Section() {
             alignItems: 'center',
             justifyContent: 'space-between',
             padding: isMobile ? '20px' : '50px',
-            paddingTop: isMobile ? '40px' : '150px',
+            paddingTop: isMobile ? '0px' : '5px',
             gap: '10px',
             width: '100%',
             marginLeft: isMobile ? '0' : '80px',
@@ -88,7 +88,7 @@ export function Section() {
             cursor: 'pointer',
         },
         imageWrapper: {
-            marginTop: isMobile ? '30px' : '0',
+            marginTop: isMobile ? '30px' : '10px',
             marginRight: isMobile ? '0' : '200px',
 
         },

@@ -86,9 +86,10 @@ export function Navbar() {
       width: '60%',
       backgroundColor: '#fefaf9',
       padding: '30px 20px',
+      paddingRight: '50px',
       display: 'flex',
       flexDirection: 'column' as const,
-      alignItems: 'flex-start',
+      alignItems: 'center',
       gap: '30px',
       zIndex: 999,
       boxShadow: '-4px 0 8px rgba(0, 0, 0, 0.1)',
@@ -110,7 +111,7 @@ export function Navbar() {
       color: '#8b3a45',
       fontSize: '28px',
       alignSelf: 'flex-end',
-      marginRight: '50px',
+      marginRight: '20px',
     },
   };
 
@@ -142,7 +143,7 @@ export function Navbar() {
               size={30}
               color="#8b3a45"
               onClick={() => setIsMenuOpen(true)}
-              style={{ cursor: 'pointer', padding: '40px 0px' }}
+              style={{ cursor: 'pointer', padding: '40px 25px' }}
             />
           ) : (
             <>
