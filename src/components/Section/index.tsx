@@ -89,7 +89,7 @@ export function Section() {
         },
         imageWrapper: {
             marginTop: isMobile ? '30px' : '10px',
-            marginRight: isMobile ? '0' : '200px',
+            marginRight: isMobile ? '50px' : '250px',
 
         },
         image: {

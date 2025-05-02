@@ -33,9 +33,11 @@ export function Navbar() {
       zIndex: 1000,
     },
     logo: {
+      display: 'flex',
       borderRadius: '50%',
       width: isMobile ? '80px': '6%',
       padding: isMobile ? '15px' : '20px',
+      justifyContent: 'flex-start',
     },
     ul: {
       display: 'flex',
@@ -143,7 +145,7 @@ export function Navbar() {
               size={30}
               color="#8b3a45"
               onClick={() => setIsMenuOpen(true)}
-              style={{ cursor: 'pointer', padding: '0 25px', marginBottom:'20px', marginRight: '10px' }}
+              style={{ cursor: 'pointer', padding: '0 25px', marginBottom:'20px', marginRight: '5px' }}
             />
           ) : (
             <>
