@@ -47,7 +47,7 @@ export function Section() {
             color: 'transparent',
         },
         h3: {
-            fontSize: isMobile ? '1.3rem' : '1.5rem',
+            fontSize: isMobile ? '1.1rem' : '1.5rem',
             marginBottom: '15px',
             height: '56px',
             background: 'linear-gradient(to right, #8b3a45, #d45e6e)',
@@ -69,6 +69,7 @@ export function Section() {
             maxWidth: '85%',
         },
         container2: {
+            display: 'flex',
             justifyContent: isMobile ? 'center' : 'flex-start',
             alignItems: 'center',
             flexWrap: ('wrap' as React.CSSProperties['flexWrap']),
@@ -84,13 +85,12 @@ export function Section() {
             fontSize: '1rem',
         },
         arrowIcon: {
-            marginLeft: '20px',
+            marginLeft: isMobile ? '0' : '20px',
             cursor: 'pointer',
         },
         imageWrapper: {
             marginTop: isMobile ? '30px' : '10px',
             marginRight: isMobile ? '50px' : '250px',
-
         },
         image: {
             width: isMobile ? '300px' : '600px',
