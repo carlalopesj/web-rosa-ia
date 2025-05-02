@@ -28,15 +28,14 @@ export function Navbar() {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: isMobile ? '0 10px' : '10px 50px',
+      padding: isMobile ? '0' : '10px 50px',
       position: 'relative' as const,
       zIndex: 1000,
     },
     logo: {
       borderRadius: '50%',
-      width: isMobile ? '100px': '6%',
-      padding: '20px',
-      marginTop: isMobile ? '15px' : '0',
+      width: isMobile ? '80px': '6%',
+      padding: isMobile ? '15px' : '20px',
     },
     ul: {
       display: 'flex',
@@ -144,7 +143,7 @@ export function Navbar() {
               size={30}
               color="#8b3a45"
               onClick={() => setIsMenuOpen(true)}
-              style={{ cursor: 'pointer', padding: '0 25px', marginBottom:'15px' }}
+              style={{ cursor: 'pointer', padding: '0 25px', marginBottom:'20px', marginRight: '10px' }}
             />
           ) : (
             <>
