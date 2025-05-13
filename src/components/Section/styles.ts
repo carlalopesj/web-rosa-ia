@@ -48,25 +48,27 @@ const baseStyles: Record<string, CSSProperties> = {
         lineHeight: 1.5
     },
     container1: {
-        maxWidth: '85%'
+        maxWidth: '85%',
+        marginBottom: '2rem'
     },
     container2: {
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'center',
         flexWrap: 'wrap',
-        gap: '10px'
+        gap: '5px'
     },
     button: {
         padding: '15px 21px',
         background: 'linear-gradient(to right, #8b3a45, #d45e6e)',
         color: 'white',
         border: 'none',
-        borderRadius: '40px',
+        borderRadius: '1.2rem',
         cursor: 'pointer',
-        fontSize: '1rem'
+        fontSize: '1rem',
     },
     arrowIcon: {
+        marginTop: '5px',
         marginLeft: '20px',
         cursor: 'pointer'
     },
@@ -86,7 +88,7 @@ const baseStyles: Record<string, CSSProperties> = {
 const mobileStyles: Record<string, CSSProperties> = {
     sectionMain: {
         flexDirection: 'column',
-        padding: '12px',
+        padding: '0.65rem',
         paddingTop: '0px',
         marginLeft: '0'
     },
@@ -104,7 +106,7 @@ const mobileStyles: Record<string, CSSProperties> = {
     },
     p: {
         fontSize: '1rem',
-        textAlign: 'center'
+        textAlign: 'justify',
     },
     container2: {
         justifyContent: 'center',
